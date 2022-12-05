@@ -1,11 +1,12 @@
 <template>
     <div class="panel" :style="{'height':panelHeight,'width':panelWidth}" >
         <div class="title" :style="titleStyle" >
-            <el-icon color="#333333" class="no-inherit">
-                <Place />
-            </el-icon>
+            <slot name="panelIcon">
+                <el-icon color="#333333" class="no-inherit">
+                    <Place />
+                </el-icon>
+            </slot>
             {{title}}
-            <slot name="title"></slot>
         </div>
         <div class="panelBody" :style="{'height':'calc(100% - '+ titleStyle.height+')'} " ref="root">
             <slot name="panelBody"></slot>

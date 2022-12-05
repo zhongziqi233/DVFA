@@ -1,5 +1,5 @@
 <template>
-    <div></div>
+    <div id="rankMain"></div>
 </template>
 <script>
 export default {
@@ -7,5 +7,10 @@ export default {
 
 }
 </script>
-<style>
+<style scoped>
+#rankMain {
+    width: 100%;
+    height: 100%;
+    background-color: chartreuse;
+}
 </style>
