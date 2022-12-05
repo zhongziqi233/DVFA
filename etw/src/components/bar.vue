@@ -2,9 +2,19 @@
     <div id="barMain"></div>
 </template>
 <script>
+/* eslint-disable no-unused-vars */
+import * as d3 from 'd3';
+
 export default {
     name: 'barView',
+    mounted() {
 
+    },
+    methods: {
+        init() {
+
+        },
+    }
 }
 </script>
 <style scoped>

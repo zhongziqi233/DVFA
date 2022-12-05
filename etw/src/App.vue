@@ -29,8 +29,7 @@
 </template>
 
 <script>
-/* eslint-disable no-unused-vars */
-/* eslint-disable vue/no-unused-components */
+/* eslint-disable no-unused-vars,vue/no-unused-components */
 import Panel from './components/panel';
 
 import BarView from './components/bar';

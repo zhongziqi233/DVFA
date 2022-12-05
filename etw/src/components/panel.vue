@@ -8,7 +8,7 @@
             </slot>
             {{title}}
         </div>
-        <div class="panelBody" :style="{'height':'calc(100% - '+ titleStyle.height+')'} " ref="root">
+        <div class="panelBody" :style="{'height':'calc(100% - '+ titleStyle.height + ')'} " ref="root">
             <slot name="panelBody"></slot>
         </div>
     </div>
