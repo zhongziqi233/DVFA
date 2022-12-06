@@ -66,6 +66,10 @@ export default {
   position: fixed;
   left: 1px;
   top: 1px;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 .block {
   width: 50%;
