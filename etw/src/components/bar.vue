@@ -84,14 +84,17 @@ export default {
             d3.select("#barViewport").selectAll("*").remove();
             const svg = d3.select("#barViewport").append("svg").attr("width", "100%").attr("height", "100%");
             const data = this.data;
+            // 这里两个变量为用户交互选择的变量
             const city = this.city;
             const type = this.type;
+            // 颜色
             const color = {
                 "nan": "#FFFF99",
                 "3A": "#7FC97F",
                 "4A": "#FDC086",
                 "5A": "#BEAED4",
             }
+            // 根据模式不同选择不同数据
             if(type == '0') {
                 draw(data[0])
             } else if (type == '1') {
@@ -116,6 +119,7 @@ export default {
                         .attr("font-weight", "bolder")
                         .attr("transform", `translate(${200 * i + 170}, 25)`);
                 }
+                // 获取最大值
                 var maxAmount = 0;
                 for(let i in data) {
                     let stack = 0;

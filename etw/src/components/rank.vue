@@ -53,7 +53,7 @@ export default {
             // 绘制排名
             for(let i = s; i < e; i++) {
                 var svg = div.append("div")
-                    .attr("title", data[i].sales)
+                    .attr("title", data[i].sales)   // 添加鼠标移动上去显示数目
                     .attr("class", "rankBlock")
                     .style("width", "100%")
                     .style("height", "50px")
@@ -93,7 +93,7 @@ export default {
         loadMore() {
             if(this.hasInit) {
                 this.amount += 5;
-                this.init(this.amount - 5, this.amount)
+                this.init(this.amount - 5, this.amount);
             }
         },
         // 获取最大值并且向上取整
